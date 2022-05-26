@@ -1,0 +1,145 @@
+﻿:root {
+    font-size: 62.5%;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #242424;
+    font-family: 'Lucida Console';
+    font-size: 1.4rem;
+    color: cyan;
+    padding: 0.1rem;
+}
+
+a {
+    color: cyan;
+}
+
+a:hover {
+    background-color: yellow;
+    text-decoration: none;
+    color: #6203db;
+}
+
+#botao {
+    padding: 1.0rem;
+    color: white;
+    text-decoration: none;
+}
+
+#botao:hover {
+    text-decoration: underline dotted;
+    color: #333;
+    background-color: #6203db;
+}
+
+figure {
+    float: left;
+}
+
+.imgcorpo {
+    align-self: center;
+}
+
+figcaption {
+    background-color: #6203db;
+    color: yellow;
+    font-style: italic;
+    font-size: 1.0rem;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+nav{
+    text-align:right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div {
+    padding: 1.0rem;
+}
+
+.botaodiv {
+    background-color: #6203db;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 0.5rem 0.5rem 1.0rem black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.0rem;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    background-color: #333333;
+}
+
+.card {
+    padding: 1.0rem;
+    border: 0.1rem solid #cacaca;
+    border-radius: 0.6rem;
+    background-color: #333333;
+    margin: 1.0rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #000000;
+}
+
+headersection {
+    font-stretch: expanded;
+    padding: 1.0rem;
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
+}
+
+h1 {
+    color: yellow;
+    text-shadow: purple;
+}
+
+h2 {
+    text-align: center;
+    padding: 1.0rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 3.0rem;
+    margin-bottom: 0.0rem;
+    color: #36b0b7;
+}
+
+h4.headersection {
+    text-decoration: underline dotted;
+}
+
+.titulocard {
+    text-align: center;
+    padding: 1.0rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    color: white;
+}
+
+p.pPergunta {
+    text-shadow: 0.1rem black;
+}
+
+p.pResposta {
+    color: #36b0b7;
+}
+
+

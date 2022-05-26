@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Elevador - Instruções</title>
+        <meta charset="UTF-8"/>
+    </head>
+
+    <body>
+        <header id="topopag" class="headerpg">
+            <div class="cabecalho">
+                <figure>
+                    <img src="~/lib/img/header01.png" alt="Elevador C#"/>
+                </figure>
+                <nav>
+                    <ul>
+                        <li><a href="#programa">O Programa</a></li>
+                        <li><a href="#funciona">Como funciona?</a></li>
+                        <li><a href="#duvidas">Dúvidas?</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h1>Olá! Esse é o manual do programa Elevador C#</h1>
+                <p>Conheça o programa, descubra seu funcionamento e tire suas dúvidas.</p>
+            </div>
+        </header>
+        <main>
+            <section id="programa">
+                 <header class="headersection">
+                        <h4 class="headersection">Elevador C#</h4>
+                        <h2>Conheça o programa</h2>
+                 </header>
+                 <div class="card">
+                    <h4 class="titulocard">Introdução</h4>
+                    <p>Este programa foi desenvolvido como parte do trabalho final para o curso "Formação MS-DEV - Aprendendo a programar em C#", oferecido pela Samsung Ocean, em parceria com a Universidade do Estado do Amazonas (UEA), Universidade Estadual de Campinas (Unicamp) e Universidade de São Paulo (USP).</p>
+                 </div>
+                 <div class="card">
+                    <h4 class="titulocard">Objetivo</h4>
+                    <p>O objetivo deste programa foi praticar os conhecimentos adquiridos em Lógica de Programação, Resolução de Problemas e Linguagem C# para o desenvolvimento de uma interação simulada de um usuário de elevador. Para este programa em particular, o autor criou a interação com base no trabalho do ascensorista, profissional responsável pela operação, manobras e cuidados com o elevador em edifícios públicos. Trata-se de um profissional raro, porém muito presente e importante em muitos edifícios das grandes metrópoles.</p>
+                 </div>
+                 <div class="card">
+                    <h4 class="titulocard">Sobre o autor</h4>
+                    <p>Este programa foi desenvolvido pelo aluno Caio Varlei Righi Schleich, graduado em Arquitetura e Urbanismo e pós-graduado em Gerenciamento de Projetos, atualmente busca o desenvolvimento de plataformas e sistemas inteligentes em edifícios para o benefício de seus moradores e usuários. É estudante de IA, Machine Learning e IoT.</p>
+                 </div>
+            </section>
+            <section id="funciona">
+                <header class="headersection">
+                    <h4 class="headersection">Como funciona?</h4>
+                    <h2>Veja como utilizar passo a passo</h2>
+                </header>
+                <div class="card">
+                    <h4 class="titulocard">Utilização do programa</h4>
+                    <p>Ao iniciar o programa, a tela inicial apresenta uma mensagem de boas vindas baseada na hora do sistema do usuário e em seguida pergunta o nome do condomínio onde o elevador irá operar. Neste exemplo, utilizamos o nome "YYZ":</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/passo01.png"/><figcaption>01. Inicialização do programa</figcaption></figure>
+                    <p> </p>
+                    <p>O programa solicita que o usuário insira informações padrão para a operação do elevador, como o número de andares do condomínio:</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/passo02.png"/><figcaption>02. Solicitação de informação base para o número de andares do condomínio</figcaption></figure>
+                    <p> </p>
+                    <p>Em seguida, solicita a informação de qual a capacidade máxima de passageiros que podem utilizar o elevador simultaneamente. Tal como com a quantidade de andares, o programa informa um número padrão inicial:</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/passo03.png"/><figcaption>03. Solicitação de informação base para capacidade máxima</figcaption></figure>
+                    <p> </p>
+                    <p>Após a configuração inicial, é exibida uma mensagem de boas-vindas ao usuário do programa (Olá Ascensorista!) e as informações do estado atual do elevador (se está vazio, ou ocupado com determinado número de pessoas, e em qual andar se encontra):</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/passo05.png"/><figcaption>04. Tela de boas-vindas e estado inicial</figcaption></figure>
+                    <p> </p>
+                    <p>Tal como uma rotina padrão de um elevador comum, o usuário deve informar nesta ordem: quantas pessoas vão entrar no elevador, para qual andar o elevador irá, e quantas pessoas sairão do elevador no andar de destino:</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/passo06.png"/><figcaption>05. Solicitação de informações para realizar a viagem</figcaption></figure>
+                    <p> </p>
+                    <p>Após a operação de entrada, viagem e saída de pessoas, o programa informa novamente o estado do elevador, desta vez em caráter informativo e apresentando o nome do condomínio. Com essa operação concluída, o usuário pode escolher se prefere continuar operando novas viagens ou se deseja sair do programa.</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/passo07.png"/><figcaption>06. Mensagem de atualização do estado do elevador</figcaption></figure>
+                    <p> </p>
+                    <p>Caso deseje sair ao escolher a opção "s", uma mensagem de despedida é exibida:</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/tchau01.png"/><figcaption>07. Tela de saída do programa</figcaption></figure>
+                </div>
+                <div class="card">
+                    <h4 class="titulocard">Mensagens de erro</h4>
+                    <p>O programa foi elaborado com recursos para negar a entrada de dados que sejam inadequados para o seu funcionamento correto com base nas informações padrão determinadas pelo próprio usuário. O primeiro caso é a quantidade de pessoas que podem entrar no elevador ser, no máximo, a quantidade informada. Caso o elevador já esteja ocupado, o programa calculará a quantidade atual e, ao somar com a nova entrada, também apresentará mensagem de erro caso a soma ultrapasse a capacidade máxima permitida:</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/erro01.png"/><figcaption>08. Erro exibido para número de pessoas ao entrar seja inválido</figcaption></figure>
+                    <p> </p>
+                    <p>O programa também nega a entrada de dados para qual andar o usuário deseja viajar com base na informação inicial apresentada:</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/erro02.png"/><figcaption>09. Erro exibido para andar inválido</figcaption></figure>
+                    <p> </p>
+                    <p>Outro recurso de segurança é impedir a saída de mais pessoas do que a quantidade que existe dentro do elevador, garantindo cálculos matemáticos válidos:</p>
+                    <figure class="imgcorpo"><img src="~/lib/img/erro03.png"/><figcaption>10. Erro exibido para número de pessoas ao sair seja inválido</figcaption></figure>
+                </div>
+            </section>
+            <section id="duvidas">
+                <header class="headersection">
+                    <h4 class="headersection">Dúvidas</h4>
+                    <h2>Precisa de algum suporte?</h2>
+                </header>
+                <div class="card">
+                    <h4 class="titulocard">FAQ</h4>
+                    <p class="pPergunta">P: Como o programa interpreta entrada de diretrizes para andares diferentes da abrangência possível?</p>
+                    <p class="pResposta">R: O programa limita automaticamente seu funcionamento de acordo com o número de andares inserido ao ser iniciado. Caso o usuário digite um número diferente da abrangência inserida, uma mensagem de alerta é exibida.</p>
+                    <p class="pPergunta">P: Como o programa interpreta entrada de diretrizes para ocupantes do elevador que sejam maiores ou menores que a quantidade existente?</p>
+                    <p class="pResposta">R: O programa calcula quantos ocupantes entrarão ou sairão de acordo com os limites definidos na inicialização do programa, sendo o limite inferior sempre igual à zero. Caso o usuário digite um número diferente da abrangência inserida, uma mensagem de alerta é exibida.</p>
+                    <h4 class="titulocard">Mais dúvidas? Entre em contato!</h4>
+                    <p>Entre em contato com o autor pelo <a href="https://github.com/caioschleich">Github</a> caso tenha outras dúvidas ou sugestões! Obrigado!! :)</p>
+                </div>
+            </section>
+            <div class="botaodiv">
+                <a id="botao" href="#topopag">&#9650;</a>
+            </div>
+        </main>
+    </body>
+
+</html>
